@@ -1,0 +1,99 @@
+.pagionation-container {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 10;
+}
+.pagination-item {
+    padding: 0 .75rem;
+    height: 2rem;
+    text-align: center;
+    margin: auto .25rem;
+    color: rgba(255, 255, 255, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 1rem;
+    line-height: 1.43;
+    font-size: .9125rem;
+    min-width: 2rem;
+}
+
+.pagination-item .dots:hover {
+    background-color: transparent;
+    cursor: default;
+}
+.pagination-item:hover {
+    background-color: rgba(255, 90, 90, 0.5);
+    cursor: pointer;
+}
+.selected {
+    background-color: rgba(255, 90, 90, 0.4);
+    pointer-events: none;
+}
+.arrow::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: .4em;
+    height: .4em;
+    border-right: .12em solid rgba(255, 255, 255, 0.87);
+    border-top: .12em solid rgba(255, 255, 255, 0.87);
+}
+.left {
+    transform: rotate(-135deg) translate(-50%);
+}
+.right {
+    transform: rotate(45deg);
+}
+
+.disabled {
+    pointer-events: none;
+}
+.disabled .arrow::before {
+    border-right: .12em solid rgba(255, 255, 255, 0.43);
+    border-top: .12em solid rgba(255, 255, 255, 0.43);
+}
+.pagination-item .disabled:hover {
+    background-color: transparent;
+    cursor: default;
+}
+@media (max-width: 1180px) {
+    .pagination-item {
+        padding: .5rem .5rem;
+        margin: .5rem;
+        font-size: 2.2rem;
+        height: 2rem;
+    }
+}
+@media screen and (min-width:480px) and (max-width:800px)  {
+    .pagination-item {
+        padding: 1rem 1rem;
+        margin: .2rem;
+        font-size: 3rem;
+        height: 3rem;
+    }
+}
+@media screen and (max-width:479px)  {
+    .pagination-container {
+        max-width: 414px;
+    }
+    .pagination-item {
+        padding: .5rem .5rem;
+        margin: 0 .1rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 3840px) {
+    .pagination-container {
+        margin-top: 4rem;
+    }
+    .pagination-item {
+        padding: 2rem .5rem;
+        margin: 2rem;
+        font-size: 3rem;
+        height: 3rem;
+    }
+}

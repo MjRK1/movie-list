@@ -1,0 +1,16 @@
+.preloader {
+    display: flex;
+    width: calc(100vw - 10px);
+    height: calc(70vh - 25px);
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+@media (max-width: 500px) {
+    .preloader {
+        width: 100vw;
+    }
+}
+.preloader img {
+    z-index: 20;
+}

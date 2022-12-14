@@ -1,0 +1,35 @@
+.container {
+    z-index: 10;
+    margin: 0 auto;
+    margin-top: 7rem;
+    max-width: 1920px;
+}
+@media (max-width: 1180px) {
+    .container {
+        max-width: 1180px;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:820px) {
+    .container {
+        max-width: 820px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .container {
+        max-width: 414px;
+        width: 414px;
+    }
+}
+@media screen and (min-width: 3840px) {
+    .container {
+        max-width: 3810px;
+        width: 3810px;
+        margin-top: 10rem;
+    }
+}

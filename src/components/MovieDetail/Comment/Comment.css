@@ -1,0 +1,107 @@
+.comment--wrapper {
+    display: flex;
+    min-width: 50rem;
+    width: 50rem;
+    min-height: 5rem;
+    height: fit-content;
+    color:white;
+    z-index: 20;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(22, 22, 22, 0.7);
+    border-bottom: 0.09rem solid rgba(255,255,255,0.3);
+    border-radius: .2rem;
+    padding: 1rem 1rem .5rem 1rem;
+}
+.comment__nickname {
+    max-width: 8rem;
+    align-self: flex-start;
+    flex-shrink: 1;
+    opacity: 0.8;
+}
+.comment__nickname p {
+    margin: 0;
+}
+.comment__body {
+    max-width: 40rem;
+    text-align: justify;
+}
+.comment__body p {
+    margin: 0;
+    word-wrap: break-word;
+}
+.comment__btn--delete {
+    transition: opacity .2s ease-in;
+}
+.comment__btn--delete:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.comment__btn--delete {
+    align-self: flex-start;
+}
+.comment__btn--delete img {
+    width: 25px;
+    height: 25px;
+}
+@media screen and (min-width:480px) and (max-width:915px) {
+    .comment--wrapper {
+        min-width: 40rem;
+        width: 20rem;
+        min-height: 5rem;
+        height: fit-content;
+    }
+    .comment__nickname {
+        font-size: 1.5rem;
+    }
+    .comment__body p {
+        word-wrap: break-word;
+    }
+    .comment__body {
+        font-size: 1.8rem;
+        max-width: 30rem;
+        word-wrap: break-word;
+        padding-top: 2rem;
+    }
+    .comment__btn--delete img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .comment--wrapper {
+        min-width: 20rem;
+        width: 20rem;
+        min-height: 5rem;
+        height: fit-content;
+    }
+    .comment_nickname {
+        font-size: 1.2rem;
+    }
+    .comment__body p {
+        word-wrap: break-word;
+    }
+    .comment__body {
+        font-size: 1.2rem;
+        max-width: 13rem;
+        word-wrap: break-word;
+        padding-top: 1rem;
+    }
+    .comment__btn--delete img{
+        width: 40px;
+        height: 40px;
+    }
+  }
+
+  @media screen and (min-width: 3840px) {
+    .comment__nickname {
+        font-size: 1.8rem;
+    }
+    .comment__body {
+        font-size: 2rem;
+        max-width: 40rem;
+        word-wrap: break-word;
+        padding-top: 2rem;
+    }
+  }

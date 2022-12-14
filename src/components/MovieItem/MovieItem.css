@@ -1,0 +1,129 @@
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 10rem;
+    height: auto;
+    margin: 1rem 1rem 1rem 0;
+    z-index: 1;
+}
+
+.image-container {
+    height: 15rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    z-index: 20;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: opacity .2s ease-in;
+}
+.item-title {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    z-index: 20;
+    transition: color .2s ease-in;
+}
+.item-title:hover {
+    color:rgb(255, 90, 90);
+}
+.details-container {
+    display:flex;
+    height: 15.2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    position: relative;
+    bottom: 15.2rem;
+    transition: all .3s ease-in;
+    z-index: 20;
+}
+.image-container:hover {
+    border-color: rgb(255, 90, 90);
+}
+.image-container:hover img{
+    opacity: .4;
+}
+.details-container:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+.movie-genre {
+    padding-top: 5rem;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255)
+}
+.show-details {
+    font-size: 1.1rem;
+    padding: 0 .5rem 0 .5rem;
+    text-align: center;
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(255, 90, 90);
+    border-radius: .3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.show-details:hover {
+    background-color: rgb(221, 78, 78);
+}
+@media (max-height: 820px) {
+    .image-container {
+        height: 12rem;
+        margin-bottom: .5rem;
+    }
+    .details-container {
+        height: 12rem;
+        bottom: 12.2rem;
+    }
+}
+@media screen and (min-width:480px) and (max-width:800px) {
+    .item-title {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 414px) {
+    .item-container {
+        margin: 1rem .5rem 1rem .5rem;
+    }
+}
+@media screen and (min-width: 3840px) {
+    .item-container {
+        max-width: 30rem;
+        width: 30rem;
+        margin-right: 4rem;
+    }
+    .item-title {
+        font-size: 3rem;
+    }
+    .image-container {
+        height: 34rem;
+        width: 30rem;
+        margin-right: 2rem;
+        margin-bottom: .5rem;
+    }
+    .details-container {
+        height: 34rem;
+        bottom: 34.2rem;
+    }
+    .movie-genre {
+        font-size: 3rem;
+    }
+    .show-details {
+        width: 20rem;
+        height: 5rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
